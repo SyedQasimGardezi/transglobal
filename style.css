@@ -361,4 +361,7 @@ footer {
   .right-contact {
     height: auto;
   }
+  .banner-card > p {
+    font-size: 20px;
+  }
 }

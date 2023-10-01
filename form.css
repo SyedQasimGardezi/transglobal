@@ -32,7 +32,7 @@ form {
 textarea {
   height: 150px;
   line-height: 150%;
-  resize: vertical;
+  resize: none;
 }
 
 [type="submit"] {
@@ -49,9 +49,16 @@ textarea {
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700;
+  border: white 2px solid;
 }
-[type="submit"]:hover {
-  background: #cc4949;
+[type="submit"]:hover,
+[type="submit"]:focus {
+  background: #ff0042;
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 0.75; /* Firefox */
 }
 
 @media only screen and (max-width: 900px) {

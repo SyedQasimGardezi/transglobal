@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="top.css" />
     <link rel="stylesheet" href="ham1.css" />
     <link rel="stylesheet" href="testimony.css" />
+    <link rel="stylesheet" href="counting.css" />
     <script src="jquery-3.6.4.min.js"></script>
     <title>Home</title>
   </head>
@@ -119,19 +120,19 @@
       <div class="why-choose-statusbar">
         <div class="status">
           <div class="status-card">
-            <div class="status-numbers">700</div>
+            <div class="status-numbers" data-val="700">000</div>
             <div class="status-name">Total Projects</div>
           </div>
           <div class="status-card">
-            <div class="status-numbers">2500+</div>
+            <div class="status-numbers" data-val="22">000</div>
             <div class="status-name">Workers</div>
           </div>
           <div class="status-card">
-            <div class="status-numbers">500+</div>
+            <div class="status-numbers" data-val="500">000</div>
             <div class="status-name">Happy Clients</div>
           </div>
           <div class="status-card">
-            <div class="status-numbers">200+</div>
+            <div class="status-numbers" data-val="200">000</div>
             <div class="status-name">Performance</div>
           </div>
         </div>
@@ -143,8 +144,7 @@
         <div class="left-help-card">
           <h1 class="underline">How We Help?</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
-            quam?
+            At UTD, we offer you the finest possible freight rate for any truckload you may have and be careful of any problems that may arise while driving. We are a self-governing Semi Truck Dispatch Company in North America that supports you and find the best conceivable loads in the market….
           </p>
           <div class="our-mission">
             <div class="icon">
@@ -223,12 +223,11 @@
 <div class="banner">
   <div class="banner-card">
     <h1>SEND US AN EMAIL</h1>
-  <p>hrtransgloballlc@gmail.com</p>
-  <a href="#contact-us">
+  <a href="mailto: hrtransgloballlc@gmail.com">
     <button class="button-82-pushable" role="button">
       <span class="button-82-shadow"></span>
       <span class="button-82-edge"></span>
-      <span class="button-82-front text"> Contact Us </span>
+      <span class="button-82-front text"> hrtransgloballlc@gmail.com </span>
     </button>
   </a>
   </div>
@@ -251,7 +250,7 @@
               src="https://img.icons8.com/ios-glyphs/FFA500/new-post.png"
               alt="new-post"
             />
-            <p>hrtransgloballlc@gmail.com</p>
+            <p><a href="mailto: hrtransgloballlc@gmail.com" class="mail">hrtransgloballlc@gmail.com</a></p>
           </div>
           <div class="contact-means">
             <img
@@ -267,9 +266,9 @@
       <div class="right-contact">
         <form action="mailto: hrtransgloballlc@gmail.com" method="POST" enctype="text/plain" name="contact-form">      
           <h1 style="color: white;text-align: center;">Ask Us Anything!</h1>
-          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-          <input name="email" type="text" class="feedback-input" placeholder="Email" />
-          <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+          <input name="Name:    " type="text" class="feedback-input" placeholder="Name" />   
+          <!-- <input name="email" type="text" class="feedback-input" placeholder="Email" /> -->
+          <textarea name="Message:    " class="feedback-input" placeholder="Message"></textarea>
           <input type="submit" value="Send Us Email"/>
         </form>
         </div>
@@ -294,5 +293,6 @@
     <script src="main.js"></script>
     <script src="menuscrip.js"></script>
     <script src="anim.js"></script>
+    <script src="count.js"></script>
   </body>
 </html>

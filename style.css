@@ -157,22 +157,32 @@ p {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
-  background-image: radial-gradient(
-    circle 815px at 23.4% -21.8%,
-    rgba(9, 29, 85, 1) 0.2%,
-    rgba(0, 0, 0, 1) 100.2%
-  );
   padding: 20px;
   justify-content: space-between;
-  width: 50vw;
+  width: 70vw;
   border-radius: 10px;
-  height: 15vh;
-  transform: translateY(25px);
+  height: 25vh;
+  column-gap: 10px;
 }
 .status-card {
   display: grid;
   border-radius: 10px;
   place-items: center;
+  background-image: radial-gradient(
+    circle 815px at 23.4% -21.8%,
+    rgba(9, 29, 85, 1) 0.2%,
+    rgba(0, 0, 0, 1) 100.2%
+  );
+}
+.status-card::after {
+  content: "";
+  position: relative;
+  inset: 0;
+  height: 10px;
+  background-color: orange;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
 }
 .status-numbers {
   font-size: var(--h-size);
@@ -203,6 +213,9 @@ p {
   display: grid;
   width: 75%;
   row-gap: 20px;
+}
+.left-help-card > p {
+  text-align: justify;
 }
 .our-mission {
   display: flex;
@@ -283,7 +296,14 @@ svg {
   display: flex;
   column-gap: 20px;
 }
-
+.mail {
+  text-decoration: none;
+  color: orange;
+  transition: all 0.2s;
+}
+.mail:hover {
+  font-size: 21.5px;
+}
 footer {
   background-color: var(--secondary);
   height: 15vh;
@@ -317,6 +337,7 @@ footer {
     justify-content: space-evenly;
     row-gap: 20px;
     width: 75%;
+    translate: 0 -25px;
   }
   .left-about {
     height: 100vh;
@@ -325,18 +346,25 @@ footer {
     width: 75%;
   }
   .status {
-    width: 85vw;
-    height: 5vh;
-    translate: 0 -50px;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    translate: 0 -75px;
   }
   .status-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 15vh;
+    width: 30vw;
   }
   .status-numbers {
     font-size: 20px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
   .status-name {
     flex: 1;

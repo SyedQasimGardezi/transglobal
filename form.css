@@ -53,3 +53,9 @@ textarea {
 [type="submit"]:hover {
   background: #cc4949;
 }
+
+@media only screen and (max-width: 900px) {
+  form {
+    width: 90%;
+  }
+}

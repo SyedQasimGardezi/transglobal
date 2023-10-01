@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-.underline {
+/* .underline {
   position: relative;
 }
 .underline::after {
@@ -21,7 +21,7 @@
   transform: translate(30px, 60px);
   border-radius: 5px;
   background-color: orange;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -77,7 +77,7 @@ p {
   padding: 20px;
   z-index: 10;
 }
-.hero-section-card > p {
+.hero-text {
   width: 50%;
   margin: auto;
   color: var(--white);
@@ -89,6 +89,9 @@ p {
 .about-section {
   height: 100vh;
   display: flex;
+}
+.about-contact-btn {
+  margin: auto;
 }
 .left-about {
   flex: 1;
@@ -104,10 +107,6 @@ p {
   border: solid 10px gray;
   border-radius: 5px;
   box-shadow: 20px black;
-  transform: all 0.5s ease-in;
-}
-.side-image:hover {
-  scale: 1.1;
 }
 .right-about {
   flex: 1;
@@ -167,7 +166,7 @@ p {
   justify-content: space-between;
   width: 50vw;
   border-radius: 10px;
-  height: 25vh;
+  height: 15vh;
   transform: translateY(25px);
 }
 .status-card {
@@ -212,7 +211,8 @@ p {
 .icon {
   flex: 20%;
   display: grid;
-  place-items: center;
+  justify-content: center;
+  /* place-items: center; */
 }
 svg {
   fill: var(--primary);
@@ -297,6 +297,9 @@ footer {
   .menu {
     display: none;
   }
+  .hero-text {
+    width: 100%;
+  }
   .about-section {
     display: grid;
     height: 200vh;
@@ -323,8 +326,8 @@ footer {
   }
   .status {
     width: 85vw;
-    height: 15vh;
-    transform: translateY(-50px);
+    height: 5vh;
+    translate: 0 -50px;
   }
   .status-card {
     display: flex;

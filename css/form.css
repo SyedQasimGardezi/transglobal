@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 .right-contact {
-  background: rgba(255, 166, 0, 0.897);
+  background: var(--primary);
 }
 form {
   max-width: 420px;
@@ -9,14 +9,14 @@ form {
 }
 
 .feedback-input {
-  color: white;
+  color: var(--white);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid var(--white);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -26,7 +26,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
 }
 
 textarea {
@@ -42,22 +42,23 @@ textarea {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: orange;
+  color: var(--primary);
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700;
-  border: white 2px solid;
+  border: var(--white) 2px solid;
 }
 [type="submit"]:hover,
 [type="submit"]:focus {
-  background: #ff0042;
-  color: white;
+  /* background: #ff0042; */
+  background: var(--secondary);
+  color: var(--white);
 }
 ::placeholder {
-  color: white;
+  color: var(--white);
   opacity: 0.75; /* Firefox */
 }
 

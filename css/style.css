@@ -1,6 +1,6 @@
 :root {
   --primary: orange;
-  --secondary: #666;
+  --secondary: gray;
   --white: white;
   --black: black;
   --h-size: clamp(2rem, 5vw, 3rem);
@@ -8,20 +8,6 @@
   --padding-inline: 7vw;
   margin: 0;
 }
-
-/* .underline {
-  position: relative;
-}
-.underline::after {
-  content: "";
-  position: absolute;
-  width: 40%;
-  inset: 0;
-  height: 3px;
-  transform: translate(30px, 60px);
-  border-radius: 5px;
-  background-color: orange;
-} */
 html {
   scroll-behavior: smooth;
 }
@@ -51,7 +37,7 @@ p {
 }
 .hero-section {
   padding-inline: var(--padding-inline);
-  background-image: url("./1.jpg");
+  background-image: url("../media/1.jpg");
   background-position: center;
   background-size: cover;
   height: 85vh;
@@ -99,12 +85,12 @@ p {
   place-items: center;
 }
 .side-image {
-  background-image: url(./2.jpg);
+  background-image: url(../media/2.jpg);
   height: 75%;
   width: 70%;
   background-position: center;
   background-size: cover;
-  border: solid 10px gray;
+  border: solid 10px var(--secondary);
   border-radius: 5px;
   box-shadow: 20px black;
 }
@@ -116,21 +102,49 @@ p {
 .right-about-card {
   display: grid;
   width: 75%;
-  row-gap: 20px;
+  row-gap: 10px;
   text-align: justify;
 }
 .about-point {
   display: flex;
-  flex-basis: 1 3;
   column-gap: 20px;
+  height: auto;
   align-items: center;
 }
-
+.listing {
+  min-height: 100%;
+  display: grid;
+  align-items: top;
+}
+.listing > img {
+  /* height: 100%; */
+  display: grid;
+  vertical-align: top;
+}
+.services {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.ser-right {
+  display: grid;
+  place-items: center;
+}
+.ser-left {
+  display: grid;
+  place-items: center;
+}
+.ser-left-card {
+  row-gap: 10px;
+  display: grid;
+  width: 75%;
+  text-align: justify;
+}
 .why-choose-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(./3.jpg);
+  background-image: url(../media/3.jpg);
   background-position: middle;
   background-size: cover;
 }
@@ -179,7 +193,7 @@ p {
   position: relative;
   inset: 0;
   height: 10px;
-  background-color: orange;
+  background-color: var(--primary);
   width: 100%;
   bottom: 0;
   border-radius: 0 0 5px 5px;
@@ -246,7 +260,7 @@ svg {
   margin-top: 10vh;
   background-position-y: 80%;
   background-size: cover;
-  background-image: url(2.jpg);
+  background-image: url(../media/2.jpg);
   position: relative;
   display: grid;
   place-items: center;
@@ -298,7 +312,7 @@ svg {
 }
 .mail {
   text-decoration: none;
-  color: orange;
+  color: var(--primary);
   transition: all 0.2s;
 }
 .mail:hover {
@@ -312,7 +326,57 @@ footer {
   place-items: center;
   text-align: center;
 }
-
+.form-heading {
+  color: white;
+  text-align: center;
+}
+.signup-with-us {
+  height: 100vh;
+  background-image: url(../media/2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: var(--white);
+}
+.signup-with-us::after {
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.425);
+}
+.zindex {
+  z-index: 1000000000000;
+}
+.signup-card {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  z-index: 10000;
+}
+.docs {
+  text-align: center;
+  display: grid;
+  width: 50%;
+  row-gap: 10px;
+}
+.docs > p {
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding: 10px;
+}
+.signup-with-us > p {
+  width: 50%;
+  text-align: center;
+}
 @media only screen and (max-width: 900px) {
   .menu {
     display: none;
@@ -394,5 +458,24 @@ footer {
   }
   .banner-card > p {
     font-size: 20px;
+  }
+  .services {
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .ser-left {
+    height: 100vh;
+  }
+  .ser-left > h1 {
+    text-align: left;
+  }
+  .ser-right {
+    height: 100vh;
+  }
+  .signup-card,
+  .signup-with-us > p {
+    width: 90%;
+    text-align: center;
   }
 }

@@ -19,6 +19,6 @@ tlHero.fromTo(
 
 tlStatus.fromTo(
   ".status",
-  { scrollTrigger: ".status", y: 100, opacity: 0 },
+  { y: 100, opacity: 0 },
   { y: 0, opacity: 1, duration: 0.5 }
 );

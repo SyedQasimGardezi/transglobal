@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
 
 .test-body {
-  color: #000;
+  color: var(--black);
   font-family: "Shippori Antique", sans-serif;
   height: 100vh;
   display: grid;
@@ -19,7 +19,7 @@
   padding-bottom: 5rem;
   text-wrap: wrap;
 }
-h1 {
+.testimony-h1 {
   margin-bottom: calc(0.7rem + 0.5vmin);
   font-size: calc(2.3rem + 1vmin);
 }
@@ -27,7 +27,7 @@ h1 {
 .blue-line {
   height: 0.3rem;
   width: 6rem;
-  background-color: rgb(79, 143, 226);
+  background-color: var(--primary);
   margin-bottom: calc(3rem + 2vmin);
 }
 
@@ -56,7 +56,7 @@ h1 {
   width: calc(6rem + 4vmin);
   height: calc(6rem + 4vmin);
   position: relative;
-  box-shadow: 5px -3px orange;
+  box-shadow: 5px -3px var(--primary);
   background-size: cover;
   margin-bottom: calc(0.7rem + 0.5vmin);
   transition: all 0.1s;
@@ -67,11 +67,11 @@ h1 {
   font-size: calc(2rem + 2vmin);
   font-family: sans-serif;
   line-height: 150%;
-  color: #fff;
+  color: var(--white);
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: orange;
+  background-color: var(--primary);
   position: absolute;
   top: 10%;
   left: -10%;
@@ -89,7 +89,7 @@ h1 {
 #profession {
   font-size: calc(0.8rem + 0.3vmin);
   margin-bottom: calc(0.7rem + 0.5vmin);
-  color: orange;
+  color: var(--primary);
 }
 
 #description {
@@ -98,7 +98,7 @@ h1 {
   max-width: 40rem;
   text-align: center;
   margin-bottom: calc(1.4rem + 1vmin);
-  color: rgb(92, 92, 92);
+  color: var(--secondary);
   line-height: 2rem;
   /* overflow-y: scroll; */
 }
@@ -111,7 +111,7 @@ h1 {
 .arrow {
   width: calc(1.4rem + 0.6vmin);
   height: calc(1.4rem + 0.6vmin);
-  border: solid orange;
+  border: solid var(--primary);
   border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
   cursor: pointer;
   transition: transform 0.3s;

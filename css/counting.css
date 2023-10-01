@@ -23,7 +23,7 @@ i {
   text-align: center;
 }
 span.num {
-  color: #ffffff;
+  color: var(--white);
   display: grid;
   place-items: center;
   font-weight: 600;

@@ -1,0 +1,364 @@
+:root {
+  --primary: orange;
+  --secondary: #666;
+  --white: white;
+  --black: black;
+  --h-size: clamp(2rem, 5vw, 3rem);
+  --p-size: clamp(0.5rem, 4vw, 1.2rem);
+  --padding-inline: 7vw;
+  margin: 0;
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  inset: 0;
+  height: 3px;
+  transform: translate(30px, 60px);
+  border-radius: 5px;
+  background-color: orange;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: var(--h-size);
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+}
+h1::after {
+  content: " ";
+  background-color: var(--primary);
+  height: 5px;
+  width: 100%;
+  position: relative;
+}
+p {
+  font-size: var(--p-size);
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+.hero-section {
+  padding-inline: var(--padding-inline);
+  background-image: url("./1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+}
+.hero-section::after {
+  content: "''";
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section-card {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  padding: 20px;
+  z-index: 10;
+}
+.hero-section-card > p {
+  width: 50%;
+  margin: auto;
+  color: var(--white);
+}
+.hero-section-card > a {
+  z-index: 1000000;
+}
+
+.about-section {
+  height: 100vh;
+  display: flex;
+}
+.left-about {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.side-image {
+  background-image: url(./2.jpg);
+  height: 75%;
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  border: solid 10px gray;
+  border-radius: 5px;
+  box-shadow: 20px black;
+  transform: all 0.5s ease-in;
+}
+.side-image:hover {
+  scale: 1.1;
+}
+.right-about {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.right-about-card {
+  display: grid;
+  width: 75%;
+  row-gap: 20px;
+  text-align: justify;
+}
+.about-point {
+  display: flex;
+  flex-basis: 1 3;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.why-choose-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./3.jpg);
+  background-position: middle;
+  background-size: cover;
+}
+.why-choose-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  justify-content: space-evenly;
+  margin-inline: 20%;
+  padding-inline: 5%;
+  transform: translateY(10px);
+  border-radius: 5px;
+  gap: 0px;
+  height: 100%;
+  text-align: center;
+}
+.why-choose-statusbar {
+  display: grid;
+  place-items: center;
+}
+.status {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+  background-image: radial-gradient(
+    circle 815px at 23.4% -21.8%,
+    rgba(9, 29, 85, 1) 0.2%,
+    rgba(0, 0, 0, 1) 100.2%
+  );
+  padding: 20px;
+  justify-content: space-between;
+  width: 50vw;
+  border-radius: 10px;
+  height: 25vh;
+  transform: translateY(25px);
+}
+.status-card {
+  display: grid;
+  border-radius: 10px;
+  place-items: center;
+}
+.status-numbers {
+  font-size: var(--h-size);
+  color: var(--primary);
+  font-weight: bold;
+  text-align: center;
+}
+.status-name {
+  font-size: var(--p-size);
+  text-transform: uppercase;
+  color: var(--white);
+}
+.how-we-help {
+  height: 100vh;
+  display: flex;
+}
+.right-help {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.left-help {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.left-help-card {
+  display: grid;
+  width: 75%;
+  row-gap: 20px;
+}
+.our-mission {
+  display: flex;
+  column-gap: 20px;
+}
+.icon {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+svg {
+  fill: var(--primary);
+}
+
+.icon-text {
+  flex: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icon-text > h2 {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  height: 50vh;
+  margin-top: 10vh;
+  background-position-y: 80%;
+  background-size: cover;
+  background-image: url(2.jpg);
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--white);
+  z-index: 1;
+}
+.banner::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  z-index: 19999;
+}
+.banner-card > p {
+  font-size: 30px;
+}
+.contact-section {
+  height: 100vh;
+  display: flex;
+}
+.right-contact {
+  flex: 1;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+.left-contact {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.left-contact-text {
+  width: 75%;
+  display: grid;
+  row-gap: 20px;
+}
+.contact-means {
+  display: flex;
+  column-gap: 20px;
+}
+
+footer {
+  background-color: var(--secondary);
+  height: 15vh;
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .about-section {
+    display: grid;
+    height: 200vh;
+  }
+  .right-about {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+  }
+  .right-about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    width: 75%;
+  }
+  .left-about {
+    height: 100vh;
+  }
+  .side-image {
+    width: 75%;
+  }
+  .status {
+    width: 85vw;
+    height: 15vh;
+    transform: translateY(-50px);
+  }
+  .status-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .status-numbers {
+    font-size: 20px;
+    flex: 1;
+  }
+  .status-name {
+    flex: 1;
+    font-size: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+  .why-choose-text {
+    padding-inline: 10%;
+    justify-content: space-evenly;
+    margin: 20% 5%;
+  }
+
+  .how-we-help {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .right-contact {
+    height: auto;
+  }
+}

@@ -403,17 +403,7 @@ footer {
     height: 100vh;
     padding: 0;
     position: relative;
-  }
-  .right-about::after {
-    content: "";
-    inset: 0;
-    background-color: var(--primary);
-    position: absolute;
-    top: 100%;
-    margin: auto;
-    width: 50%;
-    height: 5px;
-    border-radius: 5px;
+    border-bottom: 2px var(--primary) solid;
   }
   .right-about-card {
     display: flex;

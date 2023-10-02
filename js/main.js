@@ -11,36 +11,36 @@ let people = [
     photo:
       'url("https://cdn.pixabay.com/photo/2018/03/06/22/57/portrait-3204843_960_720.jpg")',
     name: "Susan Smith",
-    profession: "WEB DEVELOPER",
+    profession: "Long-Haul Truck Driver",
     description:
-      "Cheese and biscuits chalk and cheese fromage frais. Cheeseburger caerphilly cheese slices chalk and cheese cheeseburger mascarpone danish fontina rubber cheese. Squirty cheese say cheese manchego jarlsberg lancashire taleggio cheese and wine squirty cheese. Babybel pecorino feta macaroni cheese brie queso everyone loves gouda. Cheese and biscuits camembert de normandie fromage fromage macaroni cheese",
+      "I've been on the road for over a decade, and I can confidently say that [Your Company Name] is the best partner a trucker could ask for. Their fleet of well-maintained trucks and trailers, along with their responsive customer support, have made my job a breeze. The reliability and efficiency of their services have helped me meet my deadlines consistently. I highly recommend [Your Company Name] to fellow truckers.",
   },
 
   {
     photo:
       "url('https://cdn.pixabay.com/photo/2019/02/11/20/20/woman-3990680_960_720.jpg')",
     name: "Anna Grey",
-    profession: "UFC FIGHTER",
+    profession: "Owner-Operator",
     description:
-      "I'm baby migas cornhole hell of etsy tofu, pickled af cardigan pabst. Man braid deep v pour-over, blue bottle art party thundercats vape. Yr waistcoat whatever yuccie, farm-to-table next level PBR&B. Banh mi pinterest palo santo, aesthetic chambray leggings activated charcoal cred hammock kitsch humblebrag typewriter neutra knausgaard. Pabst succulents lo-fi microdosing portland gastropub Banh mi pinterest palo santo",
+      "As an owner-operator, I rely on dependable partners to keep my business running smoothly. [Your Company Name] has been an invaluable part of my success story. Their comprehensive maintenance programs have saved me both time and money, ensuring my truck is always in top condition. Plus, their competitive rates and flexible scheduling options make them the go-to choice for any trucking needs. Thanks to [Your Company Name], I've seen my profits soar.",
   },
 
   {
     photo:
       "url('https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg')",
     name: "Branson Cook",
-    profession: "ACTOR",
+    profession: "Local Delivery Driver",
     description:
-      "Radio telescope something incredible is waiting to be known billions upon billions Jean-François Champollion hearts of the stars tingling of the spine. Encyclopaedia galactica not a sunrise but a galaxyrise concept of the number one encyclopaedia galactica from which we spring bits of moving fluff. Vastness is bearable only through love paroxysm of global death concept",
+      "I've been working as a local delivery driver for years, and [Your Company Name] has consistently exceeded my expectations. Their dedication to safety and compliance is evident in their well-trained drivers and top-notch equipment. I appreciate the friendly and professional staff who make every interaction a pleasure. [Your Company Name] truly understands the needs of drivers like me, making them my first choice for any transportation services.",
   },
 
   {
     photo:
       "url('https://cdn.pixabay.com/photo/2014/10/30/17/32/boy-509488_960_720.jpg')",
     name: "Julius Grohn",
-    profession: "PROFESSIONAL CHILD",
+    profession: "Cross-Country Hauler",
     description:
-      "Biscuit chocolate pastry topping lollipop pie. Sugar plum brownie halvah dessert tiramisu tiramisu gummi bears icing cookie. Gummies gummi bears pie apple pie sugar plum jujubes. Oat cake croissant bear claw tootsie roll caramels. Powder ice cream caramels candy tiramisu shortbread macaroon chocolate bar. Sugar plum jelly-o chocolate dragée tart chocolate marzipan cupcake gingerbread.",
+      "I've crisscrossed the country countless times in my career, and I wouldn't trust anyone else but [Your Company Name] with my freight. Their commitment to on-time deliveries and their advanced tracking technology give me peace of mind on the long hauls. Plus, their drivers are some of the friendliest and most professional I've encountered. [Your Company Name] has been a game-changer for my business.",
   },
 ];
 

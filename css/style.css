@@ -85,7 +85,6 @@ p {
   place-items: center;
 }
 .side-image {
-  background-image: url(../media/2.jpg);
   height: 75%;
   width: 70%;
   background-position: center;
@@ -93,6 +92,15 @@ p {
   border: solid 10px var(--secondary);
   border-radius: 5px;
   box-shadow: 20px black;
+}
+.one {
+  background-image: url(../media/2.jpg);
+}
+.two {
+  background-image: url(../media/3.jpg);
+}
+.three {
+  background-image: url(../media/4.jpg);
 }
 .right-about {
   flex: 1;
@@ -144,8 +152,8 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../media/3.jpg);
-  background-position: middle;
+  background-image: url(../media/6.jpg);
+  background-position: bottom;
   background-size: cover;
 }
 .why-choose-text {
@@ -184,8 +192,8 @@ p {
   place-items: center;
   background-image: radial-gradient(
     circle 815px at 23.4% -21.8%,
-    rgba(9, 29, 85, 1) 0.2%,
-    rgba(0, 0, 0, 1) 100.2%
+    rgba(9, 29, 85, 0.904) 0.2%,
+    rgba(0, 0, 0, 0.829) 100.2%
   );
 }
 .status-card::after {
@@ -260,7 +268,7 @@ svg {
   margin-top: 10vh;
   background-position-y: 80%;
   background-size: cover;
-  background-image: url(../media/2.jpg);
+  background-image: url(../media/7.jpg);
   position: relative;
   display: grid;
   place-items: center;
@@ -332,7 +340,7 @@ footer {
 }
 .signup-with-us {
   height: 100vh;
-  background-image: url(../media/2.jpg);
+  background-image: url(../media/5.jpg);
   background-size: cover;
   background-position: bottom;
   display: grid;
@@ -394,6 +402,18 @@ footer {
     justify-content: center;
     height: 100vh;
     padding: 0;
+    position: relative;
+  }
+  .right-about::after {
+    content: "";
+    inset: 0;
+    background-color: var(--primary);
+    position: absolute;
+    top: 105%;
+    margin: auto;
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
   }
   .right-about-card {
     display: flex;

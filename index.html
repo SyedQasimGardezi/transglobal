@@ -52,7 +52,7 @@
 
     <div class="about-section" id="about-us">
       <div class="left-about">
-        <div class="side-image"></div>
+        <div class="side-image one"></div>
       </div>
       <div class="right-about">
         <div class="right-about-card">
@@ -177,7 +177,7 @@
       
         </div></div>
       <div class="ser-right">
-        <div class="side-image"></div>
+        <div class="side-image two"></div>
       </div>
     </div>
     <div class="why-choose-section">
@@ -269,7 +269,7 @@
           </div>
         </div>
       </div>
-      <div class="right-help"><div class="side-image"></div></div>
+      <div class="right-help"><div class="side-image three"></div></div>
     </div>
 <div class="signup-with-us">
   <div class="signup-card">
@@ -358,12 +358,12 @@
         </div>
       </div>
       <div class="right-contact">
-        <!-- <form action="mailto: hrtransgloballlc@gmail.com" method="POST" enctype="text/plain" name="contact-form">       -->
-          <form onsubmit="sendEmail(),reset();return false;">
+        <form action="mailto: hrtransgloballlc@gmail.com" method="POST" enctype="text/plain" name="contact-form">      
+          <!-- <form onsubmit="sendEmail(), reset(); return false;"> -->
           <h1 class="form-heading">Ask Us Anything!</h1>
-          <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" />   
-          <input name="email" type="text" id="email" class="feedback-input" placeholder="Email" />
-          <textarea name="message" id="message" class="feedback-input" placeholder="Message"></textarea>
+          <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" required/>   
+          <input name="email" type="email" id="email" class="feedback-input" placeholder="Email" required/>
+          <textarea name="message" id="message" class="feedback-input" placeholder="Message" required></textarea>
           <input type="submit" value="Send Us Email" name="send"/>
         </form>
         </div>
@@ -390,19 +390,19 @@
     <script src="./js/menuscrip.js"></script>
     <script src="./js/anim.js"></script>
     <script src="./js/count.js"></script>
-    <script>
+    <!-- <script>
       function sendEmail() {
         Email.send({
         Host: "smtp.elasticemail.com",
         Username: "shahq383@gmail.com",
         Password: "2E184778B476E824B42CB6DE30E361B838CD",
         To: "qasimgardezi420@gmail.com",
-        From: document.getElementById('email').value,
+        From: "shahq383@gmail.com",
         Subject: "New Message Recieved",
         Body: "Name: "+ document.getElementById('name') + "<br> Email: "+ document.getElementById('email')+ 
         "<br> Message: "+ document.getElementById('message'),
       }).then((message) => alert("message sent successfully"));
 }
-    </script>
+    </script> -->
   </body>
 </html>

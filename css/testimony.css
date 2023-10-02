@@ -49,6 +49,7 @@
   padding-top: calc(2rem + 1vmin);
   width: 100%;
   transition: all 0.5s;
+  letter-spacing: -1px;
 }
 
 #imgDiv {

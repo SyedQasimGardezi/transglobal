@@ -409,7 +409,7 @@ footer {
     inset: 0;
     background-color: var(--primary);
     position: absolute;
-    top: 105%;
+    top: 100%;
     margin: auto;
     width: 50%;
     height: 5px;

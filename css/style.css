@@ -488,4 +488,7 @@ footer {
     width: 90%;
     text-align: center;
   }
+  .mail:hover {
+    font-size: var(--p-size);
+  }
 }

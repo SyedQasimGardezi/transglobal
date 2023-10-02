@@ -6,6 +6,8 @@
 form {
   max-width: 420px;
   margin: 50px auto;
+  display: grid;
+  row-gap: 20px;
 }
 
 .feedback-input {

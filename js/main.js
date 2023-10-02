@@ -13,7 +13,7 @@ let people = [
     name: "Susan Smith",
     profession: "Long-Haul Truck Driver",
     description:
-      "I've been on the road for over a decade, and I can confidently say that [Your Company Name] is the best partner a trucker could ask for. Their fleet of well-maintained trucks and trailers, along with their responsive customer support, have made my job a breeze. The reliability and efficiency of their services have helped me meet my deadlines consistently. I highly recommend [Your Company Name] to fellow truckers.",
+      "I've been on the road for over a decade, and I can confidently say that Transgolbal Express is the best partner a trucker could ask for. Their fleet of well-maintained trucks and trailers, along with their responsive customer support, have made my job a breeze. The reliability and efficiency of their services have helped me meet my deadlines consistently. I highly recommend Transgolbal Express to fellow truckers.",
   },
 
   {
@@ -22,7 +22,7 @@ let people = [
     name: "Anna Grey",
     profession: "Owner-Operator",
     description:
-      "As an owner-operator, I rely on dependable partners to keep my business running smoothly. [Your Company Name] has been an invaluable part of my success story. Their comprehensive maintenance programs have saved me both time and money, ensuring my truck is always in top condition. Plus, their competitive rates and flexible scheduling options make them the go-to choice for any trucking needs. Thanks to [Your Company Name], I've seen my profits soar.",
+      "As an owner-operator, I rely on dependable partners to keep my business running smoothly. Transgolbal Express has been an invaluable part of my success story. Their comprehensive maintenance programs have saved me both time and money, ensuring my truck is always in top condition. Plus, their competitive rates and flexible scheduling options make them the go-to choice for any trucking needs. Thanks to Transgolbal Express, I've seen my profits soar.",
   },
 
   {
@@ -31,7 +31,7 @@ let people = [
     name: "Branson Cook",
     profession: "Local Delivery Driver",
     description:
-      "I've been working as a local delivery driver for years, and [Your Company Name] has consistently exceeded my expectations. Their dedication to safety and compliance is evident in their well-trained drivers and top-notch equipment. I appreciate the friendly and professional staff who make every interaction a pleasure. [Your Company Name] truly understands the needs of drivers like me, making them my first choice for any transportation services.",
+      "I've been working as a local delivery driver for years, and Transgolbal Express has consistently exceeded my expectations. Their dedication to safety and compliance is evident in their well-trained drivers and top-notch equipment. I appreciate the friendly and professional staff who make every interaction a pleasure. Transgolbal Express truly understands the needs of drivers like me, making them my first choice for any transportation services.",
   },
 
   {
@@ -40,7 +40,7 @@ let people = [
     name: "Julius Grohn",
     profession: "Cross-Country Hauler",
     description:
-      "I've crisscrossed the country countless times in my career, and I wouldn't trust anyone else but [Your Company Name] with my freight. Their commitment to on-time deliveries and their advanced tracking technology give me peace of mind on the long hauls. Plus, their drivers are some of the friendliest and most professional I've encountered. [Your Company Name] has been a game-changer for my business.",
+      "I've crisscrossed the country countless times in my career, and I wouldn't trust anyone else but Transgolbal Express with my freight. Their commitment to on-time deliveries and their advanced tracking technology give me peace of mind on the long hauls. Plus, their drivers are some of the friendliest and most professional I've encountered. Transgolbal Express has been a game-changer for my business.",
   },
 ];
 

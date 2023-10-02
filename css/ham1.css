@@ -29,7 +29,7 @@
   margin: 50px;
   overflow: visible;
   position: relative;
-  z-index: 99999999;
+  z-index: 999999990;
 }
 #burger-menu span,
 #burger-menu span:before,

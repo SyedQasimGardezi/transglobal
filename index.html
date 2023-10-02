@@ -18,7 +18,7 @@
    <main class="cd__main">
     <div class="logo">
       <img src="./media/logo-removebg.png" alt="logo" class="logo-img">
-      <div class="logo-text">TransGlobal Express</div>
+      <div class="logo-text">TransGlobalExpress</div>
     </div>
       <div id="burger-menu">
         <span></span>
@@ -285,11 +285,11 @@
     </div>
     </div>
     <p class="zindex">If you have any queries while signing up with us, you can reply to this email or feel free to contact us. We look forward to working with you.</p>
-    <a href="mailto: hrtransgloballlc@gmail.com" class="zindex">
+    <a href="mailto: hrtransglobalexpress@gmail.com" class="zindex">
       <button class="button-82-pushable" role="button">
         <span class="button-82-shadow"></span>
         <span class="button-82-edge"></span>
-        <span class="button-82-front text"> hrtransgloballlc@gmail.com </span>
+        <span class="button-82-front text"> hrtransglobalexpress@gmail.com </span>
       </button>
     </a>
   </div>
@@ -319,11 +319,11 @@
 <div class="banner">
   <div class="banner-card">
     <h1>SEND US AN EMAIL</h1>
-  <a href="mailto: hrtransgloballlc@gmail.com">
+  <a href="mailto: hrtransglobalexpress@gmail.com">
     <button class="button-82-pushable" role="button">
       <span class="button-82-shadow"></span>
       <span class="button-82-edge"></span>
-      <span class="button-82-front text"> hrtransgloballlc@gmail.com </span>
+      <span class="button-82-front text"> hrtransglobalexpress@gmail.com </span>
     </button>
   </a>
   </div>
@@ -346,7 +346,7 @@
               src="https://img.icons8.com/ios-glyphs/FFA500/new-post.png"
               alt="new-post"
             />
-            <p><a href="mailto: hrtransgloballlc@gmail.com" class="mail">hrtransgloballlc@gmail.com</a></p>
+            <p><a href="mailto: hrtransglobalexpress@gmail.com" class="mail">hrtransglobalexpress@gmail.com</a></p>
           </div>
           <div class="contact-means">
             <img
@@ -360,8 +360,8 @@
         </div>
       </div>
       <div class="right-contact">
-        <form action="mailto: hrtransgloballlc@gmail.com" method="POST" enctype="text/plain" name="contact-form">      
-          <!-- <form onsubmit="sendEmail(), reset(); return false;"> -->
+        <!-- <form action="mailto: hrtransglobalexpress@gmail.com" method="POST" enctype="text/plain" name="contact-form">       -->
+          <form onsubmit="sendEmail(), reset(); return false;">
           <h1 class="form-heading">Ask Us Anything!</h1>
           <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" required/>   
           <input name="email" type="email" id="email" class="feedback-input" placeholder="Email" required/>
@@ -392,7 +392,7 @@
     <script src="./js/menuscrip.js"></script>
     <script src="./js/anim.js"></script>
     <script src="./js/count.js"></script>
-    <!-- <script>
+    <script>
       function sendEmail() {
         Email.send({
         Host: "smtp.elasticemail.com",
@@ -401,10 +401,10 @@
         To: "qasimgardezi420@gmail.com",
         From: "shahq383@gmail.com",
         Subject: "New Message Recieved",
-        Body: "Name: "+ document.getElementById('name') + "<br> Email: "+ document.getElementById('email')+ 
-        "<br> Message: "+ document.getElementById('message'),
+        Body: "Name: "+ document.getElementById('name').value + "<br> Email: "+ document.getElementById('email').value+ 
+        "<br> Message: "+ document.getElementById('message').value,
       }).then((message) => alert("message sent successfully"));
 }
-    </script> -->
+    </script>
   </body>
 </html>

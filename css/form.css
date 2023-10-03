@@ -11,14 +11,14 @@ form {
 }
 
 .feedback-input {
-  color: var(--white);
+  color: var(--black);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
-  background-color: transparent;
-  border: 2px solid var(--white);
+  background-color: var(--white);
+  border: 2px solid var(--secondary);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -51,16 +51,17 @@ textarea {
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700;
-  border: var(--white) 2px solid;
+  border: var(--secondary) 2px solid;
 }
 [type="submit"]:hover,
 [type="submit"]:focus {
-  /* background: #ff0042; */
-  background: var(--secondary);
+  background: #ff0042;
+  /* background: var(--secondary); */
   color: var(--white);
+  border: var(--white) 2px solid;
 }
 ::placeholder {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.75; /* Firefox */
 }
 

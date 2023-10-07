@@ -16,9 +16,11 @@
   <body>
 
    <main class="cd__main">
-    <div class="logo">
-      <img src="./media/logo.png" alt="logo" class="logo-img">
-    </div>
+    <a href="#">
+      <div class="logo">
+        <img src="./media/logo.png" alt="logo" class="logo-img">
+      </div>
+    </a>
       <div id="burger-menu">
         <span></span>
       </div>
@@ -41,6 +43,21 @@
       <p class="hero-text">
         We are a freight dispatching company with a client-focused mentality. Dry Vans | Reefers | Flatbeds | Power Only | Hotshot | Box Truck
       </p>
+      <div class="contacts-hero">
+        <div class="contact-means">
+          <img
+            width="25"
+            height="25"
+            src="https://img.icons8.com/ios-glyphs/FFA500/new-post.png"
+            alt="new-post"
+          />
+          <p><a href="mailto: hrtransglobalexpress@gmail.com" class="mail mailhover mailwhite">hrtransglobalexpress@gmail.com</a></p>
+        </div>
+        <div class="contact-means">
+          <img width="24" height="24" src="https://img.icons8.com/material/FFA500/phone--v1.png" alt="phone--v1"/>
+          <p class="mail tel" >(678) 704-8057</p>
+        </div> 
+      </div>
       <a href="#contact-us">
         <button class="button-82-pushable hero-btn" role="button">
           <span class="button-82-shadow"></span>
@@ -345,7 +362,11 @@
               src="https://img.icons8.com/ios-glyphs/FFA500/new-post.png"
               alt="new-post"
             />
-            <p><a href="mailto: hrtransglobalexpress@gmail.com" class="mail">hrtransglobalexpress@gmail.com</a></p>
+            <p><a href="mailto: hrtransglobalexpress@gmail.com" class="mail mailhover">hrtransglobalexpress@gmail.com</a></p>
+          </div>
+          <div class="contact-means">
+            <img width="24" height="24" src="https://img.icons8.com/material/FFA500/phone--v1.png" alt="phone--v1"/>
+            <p class="mail tel">(678) 704-8057</p>
           </div>
           <div class="contact-means">
             <img
@@ -398,7 +419,7 @@
         Host: "smtp.elasticemail.com",
         Username: "shahq383@gmail.com",
         Password: "2E184778B476E824B42CB6DE30E361B838CD",
-        To: "qasimgardezi420@gmail.com",
+        To: "hrtransglobalexpress@gmail.com",
         From: "shahq383@gmail.com",
         Subject: "New Message Recieved",
         Body: "Name: "+ document.getElementById('name').value + "<br> Email: "+ document.getElementById('email').value+ 

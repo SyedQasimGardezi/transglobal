@@ -75,7 +75,12 @@ p {
 .hero-section-card > a {
   z-index: 1000000;
 }
-
+.contacts-hero {
+  display: grid;
+  row-gap: 20px;
+  margin: auto;
+  text-align: center;
+}
 .about-section {
   height: 100vh;
   display: flex;
@@ -151,6 +156,9 @@ p {
   display: grid;
   width: 75%;
   text-align: justify;
+}
+.ser-left-card > h1 {
+  margin-bottom: 20px;
 }
 .why-choose-section {
   height: 100vh;
@@ -325,10 +333,18 @@ svg {
 .mail {
   text-decoration: none;
   color: var(--primary);
+}
+.mailhover {
   transition: all 0.2s;
 }
-.mail:hover {
+.mailhover:hover {
   font-size: 21.5px;
+}
+.mailwhite {
+  transition: all 0.2s;
+}
+.mailwhite:hover {
+  color: var(--white);
 }
 footer {
   background-color: var(--secondary);

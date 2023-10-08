@@ -332,6 +332,7 @@ svg {
   column-gap: 20px;
 }
 .mail {
+  flex: 75%;
   text-decoration: none;
   color: var(--primary);
 }
